@@ -26,6 +26,7 @@ This project fine-tunes the `Qwen2.5-Coder-1.5B-Instruct` model to generate Stre
 
 >  This tutorial is built to **run on free Colab GPUs**.  
 > To reduce loss and improve model quality, **adjust training parameters** (e.g., epochs, learning rate, batch size) as recommended in the code comments.
+> To run this tutorial you need a huggingface account and an api key
 
 
 ---
