@@ -22,6 +22,13 @@ This project fine-tunes the `Qwen2.5-Coder-1.5B-Instruct` model to generate Stre
 
 ---
 
+##  Training Tips
+
+>  This tutorial is built to **run on free Colab GPUs**.  
+> To reduce loss and improve model quality, **adjust training parameters** (e.g., epochs, learning rate, batch size) as recommended in the code comments.
+
+
+---
 ##  Usage
 
 ```python
@@ -41,13 +48,6 @@ inputs = tokenizer(text, return_tensors="pt").to(model.device)
 output = model.generate(**inputs, max_new_tokens=400)
 print(tokenizer.decode(output[0], skip_special_tokens=True))
 ```
-
----
-
-##  Training Tips
-
->  This tutorial is built to **run on free Colab GPUs**.  
-> To reduce loss and improve model quality, **adjust training parameters** (e.g., epochs, learning rate, batch size) as recommended in the code comments.
 
 ---
 
